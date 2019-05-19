@@ -1,7 +1,5 @@
-Title: test
+Title: Markdown Syntax
 Date: 2019-05-15
-
-# Markdown: Syntax
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
