@@ -134,3 +134,7 @@ dmypy.json
 .history
 
 # End of https://www.gitignore.io/api/python,visualstudiocode
+
+
+# ignore pelican built site
+output/
