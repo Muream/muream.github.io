@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Samus Rig Overview | Loïc Pinsard</title>
-	<meta name="description" content="Body rig This is still very WIP. Most of the logic is there bit it’s lacking a few controls for the armor bits and I have barely worked on the skinning. :) Spine The spine is fairly simple. Just an FK chain with a reverse pelvis control. You can individually scale each control of the spine to get some squash and stretch. You can individually scale each control of the spine to get some squash and stretch. Notes: The scale doesn’t work when scaling all the controls at the same time for some reason so you need to scale …">
+	<meta name="description" content="Body rig This is still very WIP. Most of the logic is there bit it’s lacking a few controls for the armor bits and I have barely worked on the skinning. :) Spine The spine is fairly simple. Just an FK chain with a reverse pelvis control. You can individually scale each control of the spine to get some squash and stretch. Notes: The scale doesn’t work when scaling all the controls at the same time for some reason so you need to scale them one at a time. The top of the chest armor scales way too much …">
 	<meta name="author" content="Loïc Pinsard">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="">
 	<meta name="twitter:site" content="@muream">
 	<meta property="og:title" content="Samus Rig Overview">
-	<meta property="og:description" content="Body rig This is still very WIP. Most of the logic is there bit it’s lacking a few controls for the armor bits and I have barely worked on the skinning. :) Spine The spine is fairly simple. Just an FK chain with a reverse pelvis control. You can individually scale each control of the spine to get some squash and stretch. You can individually scale each control of the spine to get some squash and stretch. Notes: The scale doesn’t work when scaling all the controls at the same time for some reason so you need to scale …">
+	<meta property="og:description" content="Body rig This is still very WIP. Most of the logic is there bit it’s lacking a few controls for the armor bits and I have barely worked on the skinning. :) Spine The spine is fairly simple. Just an FK chain with a reverse pelvis control. You can individually scale each control of the spine to get some squash and stretch. Notes: The scale doesn’t work when scaling all the controls at the same time for some reason so you need to scale them one at a time. The top of the chest armor scales way too much …">
 	<meta property="og:image" content="https://muream.github.io/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://muream.github.io/samus-rig-overview/">
@@ -85,41 +85,42 @@
 		<h2>Body&nbsp;rig</h2>
 <p>This is still very <span class="caps">WIP</span>. Most of the logic is there bit it&#8217;s lacking a few controls for the armor bits and I have barely worked on the skinning.&nbsp;:)</p>
 <h3>Spine</h3>
-<p>The spine is fairly simple. Just an <span class="caps">FK</span> chain with a reverse pelvis control.
+<p>The spine is fairly simple. Just an <span class="caps">FK</span> chain with a reverse pelvis control.<br>
 You can individually scale each control of the spine to get some squash and&nbsp;stretch.</p>
-<p>You can individually scale each control of the spine to get some squash and&nbsp;stretch.</p>
-<video autoplay loop muted playsinline width="100%" height="auto" src="/images/samus-rig-overview/spine.webm"></video>
+<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/spine.webm"></video>
 
 <p>Notes: </p>
 <ul>
-<li>The scale doesn&#8217;t work when scaling all the controls at the same time for some reason so you need to scale them one at a&nbsp;time</li>
-<li>The top of the chest armor scales way too  much, I&#8217;ll need to fix&nbsp;that</li>
+<li>The scale doesn&#8217;t work when scaling all the controls at the same time for some reason so you need to scale them one at a&nbsp;time.</li>
+<li>The top of the chest armor scales way too  much, I&#8217;ll need to fix&nbsp;that.</li>
 </ul>
 <h3>Limbs</h3>
 <p>All the limbs (arms and legs) have the same overall setup most of their settings are located on the settings&nbsp;controls.</p>
 <p><img alt="Settings Controls" src="/images/samus-rig-overview/settings-controls.png"></p>
 <ul>
 <li>
-<p>They have an <span class="caps">FK</span> and <span class="caps">IK</span> mode that you can switch between. Very straight forward so no gifs for this one. There&#8217;s an <span class="caps">IK</span>/<span class="caps">FK</span> switch on&nbsp;the</p>
+<p>They have an <span class="caps">FK</span> and <span class="caps">IK</span> mode that you can switch between. Very straight forward so no gifs for this&nbsp;one. </p>
 </li>
 <li>
-<p>In <span class="caps">IK</span>, you can decide whether you want to have  the limb stretching to reach the <span class="caps">IK</span> control or not.
-  This slider is located on the <span class="caps">IK</span> control and goes from 0 to 1. 0 means no stretch and 1 means full stretch. The value is at 0.15 by default which seems to provide a nice behavior and seriously limits <span class="caps">IK</span> Popping. 
+<p>In <span class="caps">IK</span> mode, you can decide whether you want to have  the limb stretching to reach the <span class="caps">IK</span> control or not.
+  This slider is located on the <span class="caps">IK</span> control and goes from 0 to 1.<br>
+  0 means no stretch and 1 means full stretch. The value is at 0.15 by default which seems to provide a nice behavior and seriously limits <span class="caps">IK</span> Popping. 
   If you want another default value for this, just&nbsp;ask!</p>
 </li>
 </ul>
-<p><video autoplay loop muted playsinline width="100%" height="auto" src="/images/samus-rig-overview/stretch-ik.webm"></video></p>
+<p><video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/stretch-ik.webm"></video></p>
 <ul>
 <li>The secondary controls (hidden by default) allow you bend the limb and move the knee/elbow pretty much how you want.
   This is setup in a way that you can basically consider the secondary controls as handles on a Bezier&nbsp;curve.</li>
 </ul>
-<p><video autoplay loop muted playsinline width="100%" height="auto" src="/images/samus-rig-overview/secondary-controls.webm"></video></p>
+<p><video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/secondary-controls.webm"></video></p>
 <p>Keep in mind that this behavior is layered on top of the <span class="caps">IK</span> or <span class="caps">FK</span>&nbsp;behavior.</p>
 <h4>A few arm specific&nbsp;settings</h4>
 <ul>
 <li>They are in <span class="caps">FK</span> mode by&nbsp;default</li>
 <li>When In <span class="caps">FK</span> you can toggle the &#8220;Inherit Rotation&#8221; so that the arms follow or not the rotation of the&nbsp;body.</li>
 </ul>
+<p><video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/arms-inherit-rotation.webm"></video></p>
 <h4>A few leg specific&nbsp;settings</h4>
 <ul>
 <li>
@@ -134,7 +135,14 @@ You can individually scale each control of the spine to get some squash and&nbsp
 <li>Bend Angle: Angle at which the Forward foot roll starts rotating on the tip of the foot. (The higher, the later the tip will&nbsp;rotate)</li>
 <li>Bank: Rolls the foot from side to side. A negative value will roll towards the interior and a positive value will roll towards the&nbsp;exterior.</li>
 </ul>
-<video autoplay loop muted playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
+<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
+
+<h2>Face&nbsp;Rig</h2>
+<p>The face rig is still very limited and what&#8217;s implemented is very straight forward so there&#8217;s not much to say right&nbsp;now.</p>
+<h3>A few&nbsp;notes:</h3>
+<p>Due to <a href="https://developer.blender.org/T64512">a crash</a> with bones custom shapes in recent builds of blender, I had to remove them as well as remove the fact that they were attached on the face.
+These features will come back once The crash is&nbsp;fixed.</p>
+<p>I had to disable the jaw control as there was some double transformations when moving the body. This will be re-enabled as soon as I find a&nbsp;fix.</p>
 	</div>
 	<div id="back-to-home"><a href="/">&laquo; Back to Home</a></div>
 			<hr>
