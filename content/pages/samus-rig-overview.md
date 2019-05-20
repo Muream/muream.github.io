@@ -42,32 +42,55 @@ All the limbs (arms and legs) have the same overall setup most of their settings
   
   Keep in mind that this behavior is layered on top of the IK or FK behavior.
 
-#### A few arm specific settings
+### The arms
 
-- They are in FK mode by default
-- When In FK you can toggle the "Inherit Rotation" so that the arms follow or not the rotation of the body.
-  
-  <video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/arms-inherit-rotation.webm"></video>
+<ul>
+	<li>They are in FK mode by default</li>
+	<li>
+		When In FK you can toggle the "Inherit Rotation" so that the arms follow or not the rotation of the body.
+<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/arms-inherit-rotation.webm"></video>
+    </li>
+	<li>There are handles on the fingers that you can scale to curl each phalanx. rotating the handle wil rotate the base of the finger.
+If you need more control over the fingers, you can show the FK controls with the "Finger Controls" attribute on the settings control.</li>
+	<li>On the side of the hand, there's a metacarpal control that allows you to rotate the metacarpals gradually. It influences the fingers like so:</li>
+	<ul>
+		<li>Pinky: 100%</li>
+		<li>Ring: 66%</li>
+		<li>Middle: 33%</li>
+		<li>Index: 33%</li>
+	</ul>
+</ul>
 
-#### A few leg specific settings
+### The legs
 
-- They are in IK mode by default
+<ul>
+	<li>They are in IK mode by default</li>
+	<li>When in IK mode, you have a few settings on the IK control:</li>
+	<ul>
+		<li>Foot Roll: A positive value will make the foot roll forward while a negative will make the foot roll on the heel.</li>
+		<li>Bend Angle: Angle at which the Forward foot roll starts rotating on the tip of the foot. (The higher, the later the tip will rotate)</li>
+		<li>Bank: Rolls the foot from side to side. A negative value will roll towards the interior and a positive value will roll towards the exterior.</li>
+	<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
+	</ul>
+</ul>
 
-- When in IK mode, you have a few settings on the IK control:
-
-  - Foot Roll: A positive value will make the foot roll forward while a negative will make the foot roll on the heel.
-  - Bend Angle: Angle at which the Forward foot roll starts rotating on the tip of the foot. (The higher, the later the tip will rotate)
-  - Bank: Rolls the foot from side to side. A negative value will roll towards the interior and a positive value will roll towards the exterior.
-
-<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
 
 
+
+
+### Helmet
+
+If you select the global control, there's an "Helmet" attributes that toggles it on/off. Since the head is actually bigger than the helmet, the head just gets hidden for now but there are other alternatives (lowering the head if the helmet is on, or just giving you a control to move the head and neck how you want)
+
+The helmet doesn't have a controller yet, it's just attached to the upper body.
 
 ## Face Rig
 
 The face rig is still very limited and what's implemented is very straight forward so there's not much to say right now.
 
-### A few notes:
+### Notes
+
+For now the Face controls are sitting in the 2nd layer of the armature. I recommend you use [Bone Layer Manager](https://gumroad.com/l/STdb) to be able to show/hide the face controls from the viewport instead of having to go in the Armature Panel everytime.
 
 Due to [a crash](https://developer.blender.org/T64512) with bones custom shapes in recent builds of blender, I had to remove them as well as remove the fact that they were attached on the face.
 These features will come back once The crash is fixed.
