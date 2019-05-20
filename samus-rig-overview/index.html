@@ -115,34 +115,43 @@ You can individually scale each control of the spine to get some squash and&nbsp
 </ul>
 <p><video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/secondary-controls.webm"></video></p>
 <p>Keep in mind that this behavior is layered on top of the <span class="caps">IK</span> or <span class="caps">FK</span>&nbsp;behavior.</p>
-<h4>A few arm specific&nbsp;settings</h4>
+<h3>The&nbsp;arms</h3>
 <ul>
-<li>They are in <span class="caps">FK</span> mode by&nbsp;default</li>
-<li>When In <span class="caps">FK</span> you can toggle the &#8220;Inherit Rotation&#8221; so that the arms follow or not the rotation of the&nbsp;body.</li>
+    <li>They are in <span class="caps">FK</span> mode by&nbsp;default</li>
+    <li>
+        When In <span class="caps">FK</span> you can toggle the &#8220;Inherit Rotation&#8221; so that the arms follow or not the rotation of the body.
+<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/arms-inherit-rotation.webm"></video>
+    </li>
+    <li>There are handles on the fingers that you can scale to curl each phalanx. rotating the handle wil rotate the base of the finger.
+If you need more control over the fingers, you can show the <span class="caps">FK</span> controls with the &#8220;Finger Controls&#8221; attribute on the settings&nbsp;control.</li>
+    <li>On the side of the hand, there&#8217;s a metacarpal control that allows you to rotate the metacarpals gradually. It influences the fingers like&nbsp;so:</li>
+    <ul>
+        <li>Pinky:&nbsp;100%</li>
+        <li>Ring:&nbsp;66%</li>
+        <li>Middle:&nbsp;33%</li>
+        <li>Index:&nbsp;33%</li>
+    </ul>
 </ul>
-<p><video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/arms-inherit-rotation.webm"></video></p>
-<h4>A few leg specific&nbsp;settings</h4>
+
+<h3>The&nbsp;legs</h3>
 <ul>
-<li>
-<p>They are in <span class="caps">IK</span> mode by&nbsp;default</p>
-</li>
-<li>
-<p>When in <span class="caps">IK</span> mode, you have a few settings on the <span class="caps">IK</span>&nbsp;control:</p>
-</li>
-<li>
-<p>Foot Roll: A positive value will make the foot roll forward while a negative will make the foot roll on the&nbsp;heel.</p>
-</li>
-<li>Bend Angle: Angle at which the Forward foot roll starts rotating on the tip of the foot. (The higher, the later the tip will&nbsp;rotate)</li>
-<li>Bank: Rolls the foot from side to side. A negative value will roll towards the interior and a positive value will roll towards the&nbsp;exterior.</li>
+    <li>They are in <span class="caps">IK</span> mode by&nbsp;default</li>
+    <li>When in <span class="caps">IK</span> mode, you have a few settings on the <span class="caps">IK</span>&nbsp;control:</li>
+    <ul>
+        <li>Foot Roll: A positive value will make the foot roll forward while a negative will make the foot roll on the&nbsp;heel.</li>
+        <li>Bend Angle: Angle at which the Forward foot roll starts rotating on the tip of the foot. (The higher, the later the tip will&nbsp;rotate)</li>
+        <li>Bank: Rolls the foot from side to side. A negative value will roll towards the interior and a positive value will roll towards the&nbsp;exterior.</li>
+    <video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
+    </ul>
 </ul>
-<video autoplay loop muted controls playsinline width="100%" height="auto" src="/images/samus-rig-overview/foot-roll.webm"></video>
 
 <h3>Helmet</h3>
 <p>If you select the global control, there&#8217;s an &#8220;Helmet&#8221; attributes that toggles it on/off. Since the head is actually bigger than the helmet, the head just gets hidden for now but there are other alternatives (lowering the head if the helmet is on, or just giving you a control to move the head and neck how you&nbsp;want)</p>
 <p>The helmet doesn&#8217;t have a controller yet, it&#8217;s just attached to the upper&nbsp;body.</p>
 <h2>Face&nbsp;Rig</h2>
 <p>The face rig is still very limited and what&#8217;s implemented is very straight forward so there&#8217;s not much to say right&nbsp;now.</p>
-<h3>A few&nbsp;notes:</h3>
+<h3>Notes</h3>
+<p>For now the Face controls are sitting in the 2nd layer of the armature. I recommend you use <a href="https://gumroad.com/l/STdb">Bone Layer Manager</a> to be able to show/hide the face controls from the viewport instead of having to go in the Armature Panel&nbsp;everytime.</p>
 <p>Due to <a href="https://developer.blender.org/T64512">a crash</a> with bones custom shapes in recent builds of blender, I had to remove them as well as remove the fact that they were attached on the face.
 These features will come back once The crash is&nbsp;fixed.</p>
 <p>I had to disable the jaw control as there was some double transformations when moving the body. This will be re-enabled as soon as I find a&nbsp;fix.</p>
